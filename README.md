@@ -35,6 +35,7 @@ The following should serve as the formulas used to complete the calculations:
 - a - b = c
 - a x b = c
 - a / b = c
+
 When prompted to type in the first number, type it in and press enter. Repeat for the second number.
 
 Once the final result is shown, you will be asked whether you have more calculation to make.
