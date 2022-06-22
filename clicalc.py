@@ -1,67 +1,74 @@
-# Made by Alex Osterrieth
-# Don't judge this too hard, it's my first program made. ever.
+# Made by Alex Osterrieth 
+# Second attempt at CLICalc
 
-# Strings of text used throughout the program:
-textresult = "The result is: "
+print("Welcome to CLICalc")
 
-# In case of an error encountered
-def error():
-    print("Error, try again")
-    main()
+def addition():
+    print("Please use the following formula: a + b = c")
+    num1 = float(input("Please type the value of a: "))
+    num2 = float(input("Please type the value of b: "))
+    print(num1, " + ", num2, " = ", num1+num2)
+    ending()
 
-# Code of main body, aka main()
+def multiplication():
+    print("Please use the following formula: a x b = c")
+    num1 = float(input("Please type the value of a: "))
+    num2 = float(input("Please type the value of b: "))
+    print(num1, " x ", num2, " = ", num1*num2)
+    ending()
+
+def subtraction():
+    print("Please use the following formula: a - b = c")
+    num1 = float(input("Please type the value of a: "))
+    num2 = float(input("Please type the value of b: "))
+    print(num1, " - ", num2, " = ", num1-num2)
+    ending()
+
+def division():
+    print("Please use the following formula: a / b = c")
+    num1 = float(input("Please type the value of a: "))
+    num2 = float(input("Please type the value of b: "))
+    print(num1, " / ", num2, " = ", num1/num2)
+    ending()
+
+# Exit closes the program after the user choses to quit.
+def exit():
+    print("Thanks for using this calculator")
+
+# Ending() appears after a calculation result is shown to allow the user to perform another calculation if desired
+def ending():
+    calmake = input("Do you have more calculations to make (yes/no)? ")
+    if calmake == "yes":
+        main()
+    elif calmake == "Yes":
+        main()
+    elif calmake == "y":
+        main()
+    elif calmake == "Y":
+        main()
+    else:
+        print("Thanks for choosing to use this calculator.")
+
+# Main is the operation selector.
 def main():
-    # Get the user to select the type of operation they would like to perform
-    print("What operation would you like to perform?")
     print("1 - Addition")
     print("2 - Subtraction")
     print("3 - Multiplication")
     print("4 - Division")
 
-    operation = int(input("Make your choice: "))
+    selection = float(input("Please make your choice: "))
 
-    # selection of numbers
-    num1= int(input("Enter your first number: "))
-    num2= int(input("Enter your second number: "))
-
-    numadd = num1+num2
-    numsub = num1-num2
-    nummul = num1*num2
-    numdiv = num1/num2
-
-    # Opeation selection
-    if operation == 1:
-        print(textresult, numadd)
-    elif operation == 2:
-        print(textresult, numsub)
-    elif operation == 3:
-        print(textresult, nummul)
-    elif operation == 4:
-        print(textresult, numdiv)
+    if selection == 1:
+        addition()
+    elif selection == 2:
+        subtraction()
+    elif selection == 3:
+        multiplication()
+    elif selection == 4:
+        division()
     else:
-        error()
-    
-    finalstep()
-
-# End
-def end():
-    print("Thanks for using this calculator")
-    print("Goodbye!")
-
-#define final step
-def finalstep():
-    endtest = (input("Do you have additional calculations to make (yes/no): "))
-
-    if endtest == "yes":
+        print("error, please try again")
         main()
-    elif endtest == "Yes":
-        main()
-    elif endtest == "y":
-        main()
-    elif endtest == "Y":
-        main()
-    else:
-        end()
 
-# Program execution order
+# Execution order of the program
 main()
