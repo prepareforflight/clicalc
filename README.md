@@ -30,11 +30,11 @@ python3 clicalc.py
 
 The program will promt you to chose the type of operation you want to solve. Type in the corresponding number and press enter.
 
-The following should serve as the formulas used to know the order in which to type in the numbers:
-- final result = first number + second number
-- final result = first number - second number
-- final result = first number x second number
-- final result = first number / second number
+The following should serve as the formulas used to complete the calculations:
+- a + b = c
+- a - b = c
+- a x b = c
+- a / b = c
 When prompted to type in the first number, type it in and press enter. Repeat for the second number.
 
 Once the final result is shown, you will be asked whether you have more calculation to make.
