@@ -7,7 +7,7 @@ Basicalc is a very basic, CLI based calculator. Due to current limitations,you c
 To install the program, use the git clone command in the terminal of your choice.
 
 ```bash
-git clone https://github.com/Alexosterrieth/clicalc.git
+git clone https://github.com/prepareforflight/clicalc.git
 ```
 
 Change to the working directory of Basicalc.
