@@ -47,7 +47,7 @@ def ending():
     elif calmake == "Y":
         main()
     else:
-        print("Thanks for chosing to use this calculator.")
+        print("Thanks for choosing to use this calculator.")
 
 # Main is the operation selector.
 def main():
